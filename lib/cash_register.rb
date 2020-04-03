@@ -23,12 +23,10 @@ class CashRegister
     end
   end
   
-  
   def items
    @cart.collect {|item, price| item}.flatten
   end
   
-
   def void_last_transaction
   end
 end
