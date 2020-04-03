@@ -18,6 +18,7 @@ class CashRegister
     discount = @total.to_f*20/100
     after_discount = self.total - discount
     puts "After the discount, the total comes to $#{after_discount}."
+    self.total = 0
   end
   
   
