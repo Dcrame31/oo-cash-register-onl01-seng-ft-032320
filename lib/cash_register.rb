@@ -19,6 +19,7 @@ class CashRegister
   
   
   def items
+    @@items.collect {|item, price| item}
   end
   
 
