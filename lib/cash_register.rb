@@ -19,7 +19,7 @@ class CashRegister
   
   
   def items
-    @@items.collect {|item, price| item}
+   @@items.collect {|item, price| item}.flatten
   end
   
 
