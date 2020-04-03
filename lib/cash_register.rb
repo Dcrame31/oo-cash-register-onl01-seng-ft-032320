@@ -4,7 +4,9 @@ class CashRegister
   
   def initialize
     @total = 0
-    self.apply_discount
+    if self.total > 0 
+    apply_discount
+  end
   end
   
   def add_item(item, price, quantity=1 )
